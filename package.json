@@ -16,6 +16,7 @@
     "node-sass": "^7.0.0"
   },
   "scripts": {
+    "build": "gulpp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "alisher",
