@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "gauge": "^5.0.2",
+    "glob": "^11.0.3",
+    "npmlog": "^7.0.1",
+    "sass": "^1.89.2",
+    "uuid": "^11.1.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
