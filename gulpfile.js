@@ -13,3 +13,7 @@ gulp.task("watch", function () {
   // Other watchers
 });
 
+gulp.task("build", function () {
+  return gulp.build("build", gulp.series(["sass"]));
+  // Other watchers
+});
