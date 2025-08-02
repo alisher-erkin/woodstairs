@@ -2,17 +2,14 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass")(require("sass"));
 
-gulp.task('html', () => {
-  return gulp.build('*.html') // путь к вашим HTML-файлам
-    .pipe(gulp.dest('dist'));
-});
+
 
 
 gulp.task("sass", async function () {
   return gulp
     .src("scss/*.scss")
     .pipe(sass()) // Using gulp-sass
-    .pipe(gulp.dest("dist/css"));
+    .pipe(gulp.dest("css"));
 });
 
 gulp.task("watch", function () {
