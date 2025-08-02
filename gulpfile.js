@@ -2,6 +2,11 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass")(require("sass"));
 
+gulp.task('html', () => {
+  return gulp.src('src/*.html') // путь к вашим HTML-файлам
+    .pipe(gulp.dest('dist'));
+});
+
 
 gulp.task("sass", async function () {
   return gulp
@@ -15,10 +20,6 @@ gulp.task("watch", function () {
   // Other watchers
 });
 
+gulp.task('build', gulp.series('sass'));
 
-gulp.task('html', () => {
-  return gulp.src('src/*.html') // путь к вашим HTML-файлам
-    .pipe(gulp.dest('dist'));
-});
 
-gulp.task('build', gulp.series('clean', gulp.parallel('html', 'sass')));
