@@ -5,7 +5,7 @@ gulp.task("sass", async function () {
   return gulp
     .src("scss/*.scss")
     .pipe(sass()) // Using gulp-sass
-    .pipe(gulp.dest("dist/css"));
+    .pipe(gulp.dest("css"));
 });
 
 gulp.task("watch", function () {
