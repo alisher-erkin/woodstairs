@@ -16,3 +16,8 @@ gulp.task("watch", function () {
 });
 
 gulp.task('build', gulp.series('sass'));
+
+gulp.task('html', () => {
+  return gulp.src('src/*.html') // путь к вашим HTML-файлам
+    .pipe(gulp.dest('dist'));
+});
