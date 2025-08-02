@@ -3,7 +3,7 @@ var gulp = require("gulp");
 var sass = require("gulp-sass")(require("sass"));
 
 gulp.task('html', () => {
-  return gulp.src('src/*.html') // путь к вашим HTML-файлам
+  return gulp.build('*.html') // путь к вашим HTML-файлам
     .pipe(gulp.dest('dist'));
 });
 
