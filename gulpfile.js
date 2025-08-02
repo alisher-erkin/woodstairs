@@ -15,4 +15,4 @@ gulp.task("watch", function () {
   // Other watchers
 });
 
-gulp.task('build', gulp.series('html'));
+gulp.task('build', gulp.series('sass'));
