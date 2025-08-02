@@ -1,6 +1,12 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass")(require("sass"));
 
+gulp.task("html", function () {
+  return gulp
+    .src("index.html") // можно указать шаблон, если файлов много: "*.html"
+    .pipe(gulp.dest("dist"));
+});
+
 
 gulp.task("sass", async function () {
   return gulp
