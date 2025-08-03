@@ -11,6 +11,7 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "node-sass": "^7.0.0"
@@ -21,5 +22,3 @@
   "author": "alisher",
   "license": "ISC"
 }
-
-
