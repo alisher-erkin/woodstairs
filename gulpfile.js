@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const del = require("del");
-const src = require('gulp');
+
 
 
 // 1. Удаление старой папки dist
@@ -28,7 +28,7 @@ function scripts() {
 }
 
 function images() {
-  return src('src/img/**/*').pipe(dest('dist/img'));
+  return src('img/**/*').pipe(dest('dist/img'));
 }
 
 // 5. Вот задача, которую вызывает Netlify: gulp build
