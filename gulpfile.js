@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const del = require("del");
-
+const { src, dest } = require("gulp");
 
 
 // 1. Удаление старой папки dist
