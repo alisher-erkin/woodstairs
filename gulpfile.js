@@ -26,7 +26,7 @@ function scripts() {
 }
 
 // 5. Вот задача, которую вызывает Netlify: gulp build
-gulp.task("build", gulp.series(clean, html, styles, scripts));
+gulp.task("build", gulp.series(clean, html, styles, scripts ));
 
 // 6. Задача watch (для локальной разработки)
 gulp.task("watch", function () {
