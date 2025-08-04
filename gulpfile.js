@@ -31,8 +31,12 @@ function images() {
   return src('img/**/*').pipe(dest('dist/img'));
 }
 
+function icons() {
+  return src('icon/**/*').pipe(dest('dist/icon'));
+}
+
 // 5. Вот задача, которую вызывает Netlify: gulp build
-gulp.task("build", gulp.series(clean, html, styles, scripts, images ));
+gulp.task("build", gulp.series(clean, html, styles, scripts, images, icons ));
 
 // 6. Задача watch (для локальной разработки)
 gulp.task("watch", function () {
