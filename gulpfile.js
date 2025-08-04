@@ -32,7 +32,7 @@ function images() {
 }
 
 function icons() {
-  return src('icon/**/*').pipe(dest('dist/icon'));
+  return src('icons/**/*').pipe(dest('dist/icons'));
 }
 
 // 5. Вот задача, которую вызывает Netlify: gulp build
