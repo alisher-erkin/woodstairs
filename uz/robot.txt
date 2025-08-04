@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Allow:/tastroy.uz 
+Host: www.tastroy.uz
+Sitemap: https://tastroy.uz/sitemap.xml
+
+User-agent: YandexBot
+Allow:/tastroy.uz 
+Host: www.tastroy.uz
+Sitemap: https://tastroy.uz/sitemap.xml
